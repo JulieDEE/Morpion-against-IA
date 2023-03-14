@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.game {
+  margin: 20px auto;
+  width: 320px;
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #eee;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.restart {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.restart:hover {
+  background-color: #3e8e41;
+}
+
+.winner-X {
+  color: #ff5722;
+}
+
+.winner-O {
+  color: #2196f3;
+}
+
+.draw {
+  color: #333;
+}
